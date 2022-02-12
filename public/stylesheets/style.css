@@ -1,14 +1,20 @@
+/*=================================================================
+  Reset
+===================================================================*/
+
 html {
   box-sizing: border-box;
   overflow-x: hidden;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
+
 body {
   font-family: "Times New Roman", Georgia, Serif;
   margin: 0;
@@ -21,24 +27,31 @@ hr {
   border-top: 1px solid #eee;
   margin: 20px 0;
 }
+
 h1 {
   font-size: 36px;
 }
+
 h2 {
   font-size: 30px;
 }
+
 h3 {
   font-size: 24px;
 }
+
 h4 {
   font-size: 20px;
 }
+
 h5 {
   font-size: 18px;
 }
+
 h6 {
   font-size: 16px;
 }
+
 h1,
 h2,
 h3,
@@ -49,12 +62,27 @@ h6 {
   font-weight: 400;
   margin: 10px 0;
 }
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  color: inherit;
+}
+
+/*=================================================================
+  Utility classes
+===================================================================*/
+
 .ps-serif {
   font-family: serif;
 }
+
 .ps-wide {
   letter-spacing: 4px;
 }
+
 .ps-content {
   max-width: 1600px !important;
   min-width: 500px !important;
@@ -63,34 +91,35 @@ h6 {
 .ps-img-menu {
   width: 100%;
 }
+
 .ps-nav {
   letter-spacing: 4px;
 }
+
 .ps-image {
   max-width: 100%;
   height: auto;
 }
-img {
-  vertical-align: middle;
-}
-a {
-  color: inherit;
-}
+
 .ps-bordered tr,
 .ps-table-all tr {
   border-bottom: 1px solid #ddd;
 }
+
 .ps-striped tbody tr:nth-child(even) {
   background-color: #f1f1f1;
 }
+
 .ps-hoverable tbody tr:hover,
 .ps-ul.ps-hoverable li:hover {
   background-color: #ccc;
 }
+
 .ps-centered tr th,
 .ps-centered tr td {
   text-align: center;
 }
+
 .ps-btn,
 .ps-button {
   border: none;
@@ -105,9 +134,11 @@ a {
   cursor: pointer;
   white-space: nowrap;
 }
+
 .ps-btn:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .ps-btn,
 .ps-button {
   -webkit-touch-callout: none;
@@ -117,20 +148,24 @@ a {
   -ms-user-select: none;
   user-select: none;
 }
+
 .ps-disabled,
 .ps-btn:disabled,
 .ps-button:disabled {
   cursor: not-allowed;
   opacity: 0.3;
 }
+
 .ps-disabled *,
 :disabled * {
   pointer-events: none;
 }
+
 .ps-btn.ps-disabled:hover,
 .ps-btn:disabled:hover {
   box-shadow: none;
 }
+
 .ps-badge,
 .ps-tag {
   background-color: #000;
@@ -140,21 +175,26 @@ a {
   padding-right: 8px;
   text-align: center;
 }
+
 .ps-badge {
   border-radius: 50%;
 }
+
 .ps-ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 .ps-ul li {
   padding: 8px 16px;
   border-bottom: 1px solid #ddd;
 }
+
 .ps-ul li:last-child {
   border-bottom: none;
 }
+
 .ps-tooltip,
 .ps-display-container {
   position: relative;
