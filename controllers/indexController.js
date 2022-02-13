@@ -1,4 +1,4 @@
-platos = [
+let platos = [
     {
         nombre: "Carpaccio fresco",
         descripcion: "Entrada Carpaccio de salmón con cítricos",
@@ -19,6 +19,15 @@ platos = [
         descripcion: "Espárragos blancos con vinagreta de verduras y jamón ibérico",
         precio: "U$S 37.50"
     }
-]
+];
 
-module.exports = platos;
+const indexContr = {
+    indexMethod: (req, res) => {
+        res.render('index', {
+            title: 'Pimienta & Sal',
+            listadoPlatos: platos
+        });
+    }
+}
+
+module.exports = indexContr;
