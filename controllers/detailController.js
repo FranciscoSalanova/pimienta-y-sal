@@ -25,13 +25,14 @@ let platos = [
     }
 ];
 
-const indexContr = {
-    indexMethod: (req, res) => {
-        res.render('index', {
+const detailContr = {
+    detailMethod: (req, res) => {
+        res.render('detail', {
             title: 'Pimienta & Sal',
-            listadoPlatos: platos
+            listadoPlatos: platos,
+            platoId: req.params.id
         });
     }
 }
 
-module.exports = indexContr;
+module.exports = detailContr;

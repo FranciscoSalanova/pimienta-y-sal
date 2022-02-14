@@ -74,7 +74,7 @@
           <h1 class="ps-center">Nuentro Menu</h1>
           <br />
           <% for (let plato of listadoPlatos) { %>
-            <h4><%= plato.nombre %> </h4>
+            <h4><a href="/detalle/<%= plato.id %>"><%= plato.nombre %></a></h4>
               <p class="ps-text-grey">
                 <%= plato.descripcion %> <%= plato.precio %>
               </p>
