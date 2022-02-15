@@ -25,11 +25,17 @@ let platos = [
     }
 ];
 
+let aboutUs = {
+    parrafo1: "Este es el primer párrafo de nuestra página Pimienta y Sal, un famosisimo restaurante localizado en la Ciudad de Buenos Aires (Argentina).",
+    parrafo2: "Este es el primer párrafo de nuestra página Pimienta y Sal, un famosisimo restaurante localizado en la Ciudad de Buenos Aires (Argentina)."
+}
+
 const indexContr = {
     indexMethod: (req, res) => {
         res.render('index', {
             title: 'Pimienta & Sal',
-            listadoPlatos: platos
+            listadoPlatos: platos,
+            about: aboutUs
         });
     }
 }
